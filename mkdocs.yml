@@ -1,12 +1,24 @@
-site_name: کهربا زبان برنامه نویسی ساده و قدرتمند
+site_name: زبان برنامه نویسی کهربا
 theme:
   name: material
   direction: rtl
   language: fa
   logo: assets/images/logo.png
+  favicon: assets/images/favicon.ico
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
 
-  features:
-    - header.autohide
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 extra_css:
   - stylesheets/extra.css
