@@ -36,5 +36,6 @@ extra:
 
   version:
     provider: mike
+
 repo_url: https://github.com/kahroba-lang/kahroba
 repo_name: ریپوزیتوری گیت‌هاب

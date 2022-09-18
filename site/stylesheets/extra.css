@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../assets/fonts/webfonts/Vazirmatn[wght].woff2")
+      format("woff2 supports variations"),
+    url("../assets/fonts/webfonts/Vazirmatn[wght].woff2")
+      format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root,
+body,
+html,
+* {
+  font-family: "Vazirmatn" !important;
+}
