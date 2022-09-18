@@ -1,1 +1,1 @@
-# بیشتر بدانید
+# Kahroba language documentation.
