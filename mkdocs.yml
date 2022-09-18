@@ -3,6 +3,10 @@ theme:
   name: material
   direction: rtl
   language: fa
+  logo: assets/images/logo.png
+
+  features:
+    - header.autohide
 
 extra_css:
   - stylesheets/extra.css

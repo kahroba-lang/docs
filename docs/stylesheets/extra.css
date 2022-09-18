@@ -11,6 +11,7 @@
 
 :root,
 body,
-html {
+html,
+* {
   font-family: "Vazirmatn" !important;
 }
