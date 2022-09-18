@@ -1,6 +1,7 @@
 site_name: زبان برنامه نویسی کهربا
 plugins:
-  - search
+  - search:
+      lang: "fa"
 theme:
   name: material
   direction: rtl
@@ -22,6 +23,8 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
+
+    - primary: red
 
 extra_css:
   - stylesheets/extra.css

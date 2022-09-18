@@ -1,0 +1,797 @@
+
+<!doctype html>
+<html lang="fa" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.1">
+    
+    
+      
+        <title>زبان برنامه نویسی کهربا</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.2e8b5541.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-XXXXXXXX-X","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");ga("send","event","feedback","click",t,e),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){ga("send","pageview",e.pathname)})});var e=document.createElement("script");e.async=!0,e.src="https://www.google-analytics.com/analytics.js",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="rtl" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          پرش به محتویات
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="زبان برنامه نویسی کهربا" class="md-header__button md-logo" aria-label="زبان برنامه نویسی کهربا" data-md-component="logo">
+      
+  <img src="assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            زبان برنامه نویسی کهربا
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              معرفی زبان کهربا
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="" data-md-color-primary="red" data-md-color-accent=""  aria-hidden="true"  type="radio" name="__palette" id="__palette_3">
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="جستجو" placeholder="جستجو" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kahroba-lang/kahroba" title="رفتن به مخزن" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ریپوزیتوری گیت‌هاب
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="زبان برنامه نویسی کهربا" class="md-nav__button md-logo" aria-label="زبان برنامه نویسی کهربا" data-md-component="logo">
+      
+  <img src="assets/images/logo.png" alt="logo">
+
+    </a>
+    زبان برنامه نویسی کهربا
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kahroba-lang/kahroba" title="رفتن به مخزن" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ریپوزیتوری گیت‌هاب
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          معرفی زبان کهربا
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        معرفی زبان کهربا
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    نحوه استفاده از زبان کهربا
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    کامنت
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    تعریف رشته ها
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    تعریف متغیر
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    آرایه
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    مپ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean" class="md-nav__link">
+    boolean
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    چاپ در خروجی
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    گرفتن ورودی
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    تعریف فانکشن
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swap" class="md-nav__link">
+    swap
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    نحوه استفاده از زبان کهربا
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    کامنت
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    تعریف رشته ها
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    تعریف متغیر
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    آرایه
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    مپ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean" class="md-nav__link">
+    boolean
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    چاپ در خروجی
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    گرفتن ورودی
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    تعریف فانکشن
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swap" class="md-nav__link">
+    swap
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/kahroba-lang/kahroba/edit/master/docs/index.md" title="این صفحه را ویرایش کنید" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="_1">معرفی زبان کهربا</h1>
+<p>زبان <strong>کهربا</strong> یک پروژه آموزشی جهت نمایش نحوه کار یک زبان برنامه نویسی است
+هدف این زبان سادگی و انعطاف پذیری و راحتی استفاده است</p>
+<h2 id="_2">نحوه استفاده از زبان کهربا</h2>
+<p>برای اجرای برنامه های به زبان کهربا لازم است برنامه خود را در فایلی با پسوند .krb یا .kahroba بسازید (مانند main.krb) و از خط فرمان برنامه را اجرا کنید:  </p>
+<pre><code class="language-bash">./kahroba main.krb    // linux
+kahroba.exe main.krb   // windows
+kahroba_mac main.krb   // mac
+</code></pre>
+<p>میتوانید از لینک های زیر فایل های اجرایی مربوط به سیستم عامل خود را دانلود کنید :</p>
+<p><a href="https://github.com/kahroba-lang/kahroba/releases/download/0.1/kahroba">لینوکس</a> \
+<a href="https://github.com/kahroba-lang/kahroba/releases/download/0.1/kahroba.exe">ویندوز</a> \
+<a href="https://github.com/kahroba-lang/kahroba/releases/download/0.1/kahroba_mac">مک</a></p>
+<p>همچنین میتوانید کهربا را از سورس کد بیلد بگیرید(به گیت و نسخه 1.19 گولنگ نیاز خواهید داشت) :</p>
+<pre><code>$ git clone https://github.com/kahroba-lang/kahroba.git
+$ cd kahroba
+$ go build
+</code></pre>
+<h2 id="_3">کامنت</h2>
+<p>کامنت ها در زبان کهربا با دو اسلش پشت هم شروع میشوند و خطی که کامنت در نظر گرفته شود پردازش نمی شود</p>
+<pre><code>// This is my first program in Kahroba programming language, Let's Rock!
+</code></pre>
+<h2 id="_4">تعریف رشته ها</h2>
+<p>رشته ها در زبان کهربا بین دو کوتیشن قرار میگیرند</p>
+<pre><code class="language-rust">&quot;Hello World!&quot;
+</code></pre>
+<p>دو رشته را توسط عملگر جمع میتوانید به هم متصل کنید</p>
+<pre><code class="language-rust">&quot;Hello &quot; + &quot;World!&quot; // Hello World
+</code></pre>
+<p>در زبان کهربا میتوانید رشته ها را با اعداد جمع کنید
+اگر عملوند سمت چپ رشته باشد نتیجه رشته خواهد شد<br />
+اگر عملوند سمت چپ عدد باشد نتیجه عدد خواهد شد
+مثال:</p>
+<pre><code class="language-rust">1 + &quot;1&quot; // 2
+&quot;1&quot; + 1 // 11
+</code></pre>
+<h2 id="_5">تعریف متغیر</h2>
+<p>متغیرها در زبان کهربا تایپ ندارند و نحوه تعریف کردن اونها به شکل زیر است</p>
+<pre><code class="language-rust">name = &quot;Kahroba&quot;
+version = 0.1
+a = 1 + 2
+a = &quot;text&quot;
+</code></pre>
+<h2 id="_6">آرایه</h2>
+<p>آرایه ها در زبان کهربا بسیار انعطاف پذیرند و میتوانید در آرایه دیتا تایپ های مختلفی را ذخیره کنید.</p>
+<pre><code class="language-rust">nums = [1,2,3,4]
+everything = [1,&quot;kahroba&quot;,0.1]
+</code></pre>
+<p>برای دسترسی به یک عنصر از آرایه به شکل زیر عمل میکنیم:</p>
+<pre><code class="language-rust">nums[0] // 1
+everything[1] // &quot;kahroba&quot;
+</code></pre>
+<p>به وسیله فانکشن len میتوانیم طول آرایه را بدست بیاوریم</p>
+<pre><code class="language-rust">a = [1,2,3,4,5]
+println(len(a)) // 5
+</code></pre>
+<h2 id="_7">مپ</h2>
+<p>مثل آرایه ، مپ هم در زبان کهربا از انعطاف بالایی برخوردار است و میتوانید هر نوع داده ای را درون مپ قرار دهید.</p>
+<pre><code class="language-rust">data = {&quot;name&quot;:&quot;Kahroba&quot;,&quot;version&quot;:0.1}
+println(data[&quot;name&quot;])
+</code></pre>
+<p>خروجی:</p>
+<pre><code>Kahroba
+</code></pre>
+<p><strong>نکته:</strong> میتوانید از فانکشن len برای محاسبه طول مپ استفاده کنید</p>
+<h2 id="boolean">boolean</h2>
+<p>زبان کهربا از نوع boolean پشتیبانی میکند</p>
+<pre><code class="language-rust">a = true
+b = false
+!a // false
+!b // true
+a == b // false
+a != b // true
+</code></pre>
+<h2 id="_8">چاپ در خروجی</h2>
+<p>به وسیله دستور print یا println میتوان عملیات چاپ در خروجی را انجام داد
+دستورات چاپ میتوانند چندین ورودی داشته باشند:</p>
+<pre><code class="language-rust">println(&quot;سلام دنیا!&quot;)
+print(&quot;زبان &quot;)
+print(&quot;کهربا &quot;)
+println(&quot;version:&quot;,0.1)
+</code></pre>
+<p>خروجی:</p>
+<pre><code>سلام دنیا!
+زبان کهربا version 0.1
+</code></pre>
+<h2 id="_9">گرفتن ورودی</h2>
+<p>به وسیله دستور input میتوان یک رشته را از کاربر به عنوان ورودی دریافت کرد:</p>
+<pre><code class="language-rust">name = input(&quot;What is your name:&quot;)
+print(&quot;Hello, &quot;,name)
+</code></pre>
+<h2 id="_10">تعریف فانکشن</h2>
+<p>فانکشن ها در زبان کهربا به وسیله کلمه کلیدی fn تعریف میشوند.
+فانکشن های میتوانند مقداری باز گردانند یا باز نگردانند.
+بصورت پیش فرض آخرین دستور یک فانکشن برگردانده میشود و استفاده از کلمه return اختیاری است</p>
+<pre><code class="language-rust">fn sum(a,b) {
+    a+b
+}
+</code></pre>
+<p>توابع میتوانند بصورت بازگشتی فراخوانی شوند. پیاده سازی مثال کلاسیک فاکتوریل:</p>
+<pre><code class="language-rust">fn f(n) {
+    if n &lt;= 1 { 1 }
+    n * f(n-1)
+}
+
+println(f(5)) // 120
+</code></pre>
+<p>ورودی فانکشن میتواند از هر نوعی باشد حتی یک فانکشن دیگر:</p>
+<pre><code>fn getName() {
+    "Kahroba"
+}
+fn hello(name) {
+    println("Hello ",name)
+}
+hello(getName())
+</code></pre>
+<p>خروجی:</p>
+<pre><code>Hello Kahroba
+</code></pre>
+<h2 id="swap">swap</h2>
+<p>توسط این فانکشن میتوانید مقدار دو متغیر را باهم عوض کنید</p>
+<pre><code class="language-rust">a = 5
+b = 10
+println(a,b)
+swap(a,b)
+println(a,b)
+</code></pre>
+<p>خروجی</p>
+<pre><code class="language-bash">5 10
+10 5
+</code></pre>
+<h1 id="_11">کنترل جریان برنامه</h1>
+<h2 id="_12">دستورات شرطی</h2>
+<p>به وسیله دستور if میتوان از دستورات شرطی استفاده کرد</p>
+<pre><code class="language-rust">if a + b &gt; c {
+    print(&quot;OK&quot;)
+}
+</code></pre>
+<p>همچین میتوان از دستور else برای زمان عدم صحت شرط استفاده کرد</p>
+<pre><code class="language-rust">if a + b &gt; c {
+    print(&quot;OK&quot;)
+} else {
+    print(&quot;Not OK&quot;)
+}
+</code></pre>
+<h2 id="_13">حلقه تکرار</h2>
+<p>برای استفاده از حلقه در زبان کهربا از دستور for به شکل زیر استفاده میشود</p>
+<pre><code class="language-rust">for i in 1..5 {
+    println(i)
+}
+</code></pre>
+<p>خروجی:</p>
+<pre><code>1
+2
+3
+4
+5
+</code></pre>
+<p>میتوانید تعداد گام های حلقه را به این شکل مشخص کنید:</p>
+<pre><code class="language-rust">for i in 1..5:2 {
+    println(i)
+}
+</code></pre>
+<p>خروجی:</p>
+<pre><code>1
+3
+5
+</code></pre>
+<p>به وسیله حلقه for میتوانید به روی رشته ها، آرایه ها و مپ ها پیمایش انجام دهید</p>
+<h3 id="_14">پیمایش رشته</h3>
+<pre><code class="language-rust">for s in &quot;Hello World&quot; {
+    print(s,&quot; &quot;)
+}
+</code></pre>
+<p>خروجی</p>
+<pre><code class="language-bash">H e l l o  W o r l d
+</code></pre>
+<h3 id="_15">پیمایش آرایه</h3>
+<pre><code class="language-rust">arr = [&quot;Kahroba&quot;,&quot;version&quot;,0.1]
+for v in arr {
+    print(v)
+}
+
+for i,v in arr {
+    println(i,&quot;:&quot;,v)
+}
+</code></pre>
+<p>خروجی</p>
+<pre><code class="language-bash">Kahroba version 0.1
+
+0:Kahroba
+1:version
+2:0.1
+</code></pre>
+<h3 id="_16">پیمایش مپ</h3>
+<pre><code class="language-rust">data = {&quot;name&quot;:&quot;Kahroba&quot;,&quot;version&quot;:0.1}
+for v in data {
+    println(v)
+}
+
+for k,v in data {
+    println(k,&quot;:&quot;,v)
+}
+</code></pre>
+<p>خروجی</p>
+<pre><code class="language-bash">Kahroba
+0.1
+
+name : Kahroba
+version : 0.1
+</code></pre>
+<h3 id="_17">فراخوانی فایل های کهربا خارجی</h3>
+<p>با استفاده از زبان کهربا همچنین می توانید از سایر فایل های .krb که به زبان کهربا نوشته شده است استفاده کنید. </p>
+<pre><code class="language-rust">import(&quot;helper.krb&quot;)
+</code></pre>
+<p>تمامی فانکشن ها و متغیرهای تعریف شده در فایل helper.krb در اسکوپ جاری برنامه قابل دسترس خواند بود.</p>
+<h2 id="quicksort">پیاده سازی الگوریتم quicksort توسط کهربا</h2>
+<pre><code class="language-rust">fn qsort(arr) {
+    sort(arr,0,len(arr)-1)
+}
+
+fn sort(arr,l,r) {
+    if l &lt; r {
+        q = partition(arr,l,r)
+        sort(arr,l,q-1)
+        sort(arr,q+1,r)
+    }
+}
+
+fn partition(arr,l,r)  {
+    i = l
+    for j in l..r {
+        if a[j] &lt; a[r] {
+            swap(a[i],a[j])
+            i = i + 1
+        }
+    }
+    swap(a[i],a[r])
+    i
+}
+
+
+a = [5,1,2,4,3,9,8,7,6,0]
+
+println(a)
+qsort(a)
+println(a)
+</code></pre>
+<p>خروجی</p>
+<pre><code class="language-bash">[5 1 2 4 3 9 8 7 6 0]
+[0 1 2 3 4 5 6 7 8 9]
+</code></pre>
+<blockquote>
+<p><a href="/examples/">مثال های بیشتر</a></p>
+</blockquote>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "\u06a9\u067e\u06cc \u0634\u062f", "clipboard.copy": "\u06a9\u067e\u06cc \u06a9\u0631\u062f\u0646", "search.config.lang": "en", "search.config.pipeline": " ", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\u062c\u0633\u062a\u062c\u0648", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "\u0633\u0646\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f", "search.result.one": "1 \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.other": "# \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.placeholder": "\u0628\u0631\u0627\u06cc \u0634\u0631\u0648\u0639 \u062c\u0633\u062a\u062c\u0648 \u062a\u0627\u06cc\u067e \u06a9\u0646\u06cc\u062f", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d691e9de.min.js"></script>
+      
+    
+  </body>
+</html>
