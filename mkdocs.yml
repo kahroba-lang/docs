@@ -24,8 +24,6 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
 
-    - primary: red
-
 extra_css:
   - stylesheets/extra.css
 
