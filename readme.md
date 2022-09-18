@@ -12,5 +12,7 @@ Steps:
 
 Usage example:
 ```
+# Will be accessable from https://kahroba-lang.github.io/docs/latest
+# or https://kahroba-lang.github.io/docs/0.1
 mike deploy --push --update-aliases 0.1 latest
 ```
