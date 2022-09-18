@@ -9,6 +9,7 @@ Steps:
 * First determine witch version you want to make a change.
 * Pull `gh-pages` branch
 * run `mike deploy --push --update-aliases <version> latest`
+* Push `gh-pages` branch to <main-remote>/master
 
 Usage example:
 ```
