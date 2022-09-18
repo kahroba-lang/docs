@@ -1,4 +1,35 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "Hello Git Hook"
+# ---------------------------
+# POST-CHECKOUT PARAMS 
+# ---------------------------
+# Takes 3 params:
+#  1: prev HEAD
+#  2: new HEAD
+#  3: branch change indicator (checkout file = 0; changing branches = 1)
+# For more info check here: https://git-scm.com/docs/githooks/2.2.3
+# ---------------------------
+old_head=$1
+new_head=$2
+branch_changed=$3
+
+# --- opt out if not a branch change
+if [ $branch_changed != "1" ]; then
+  exit 0;
+fi
+
+# --- get branch name and set ignore filename
+new_branch=`git branch --show-current`
+gitignore=.husky/gitignores/.gitignore
+ignore_file=.husky/gitignores/.gitignore_$new_branch
+
+# --- copy global .gitignore to project root
+cp -f $gitignore ./
+
+# --- only update .gitignore if there is a .gitignore.<branch_name> available
+if [ -f "$ignore_file" ]; then
+  echo $'\n\n'"# Branch ::: $new_branch" >> .gitignore
+  echo "# -------------------------------" >> .gitignore
+  cat $ignore_file >> .gitignore
+fi
