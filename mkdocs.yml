@@ -1,0 +1,8 @@
+site_name: کهربا زبان برنامه نویسی ساده و قدرتمند
+theme:
+  name: material
+  direction: rtl
+  language: fa
+
+extra_css:
+  - stylesheets/extra.css
