@@ -12,6 +12,7 @@ theme:
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
+      primary: red
       scheme: default
       toggle:
         icon: material/toggle-switch-off-outline
