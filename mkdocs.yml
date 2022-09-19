@@ -1,4 +1,14 @@
 site_name: زبان برنامه نویسی کهربا
+nav:
+  - درباره کهربا: about.md
+  - شروع کنید:
+      - نصب و استفاده: construction/install.md
+  - ویژگی‌های زبان:
+      - تعریف متغیرها: features/define.md
+      - آرایه‌ها | Arrays: features/arrays.md
+      - مپ‌ | Map: features/map.md
+      - عبارت‌های منطقی | boolean: features/boolean.md
+
 plugins:
   - search:
       lang: "fa"
@@ -8,6 +18,11 @@ theme:
   language: fa
   logo: assets/images/logo.png
   favicon: assets/images/favicon.ico
+
+  features:
+    - content.code.annotate
+    - navigation.instant
+    - navigation.expand
 
   palette:
     # Palette toggle for light mode
@@ -20,6 +35,7 @@ theme:
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
+      primary: red
       scheme: slate
       toggle:
         icon: material/toggle-switch
@@ -38,3 +54,9 @@ extra:
 
 repo_url: https://github.com/kahroba-lang/kahroba
 repo_name: ریپوزیتوری گیت‌هاب
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
