@@ -13,7 +13,7 @@
     
     
       
-        <title>نصب و استفاده - زبان برنامه نویسی کهربا</title>
+        <title>مپ‌ | Map - زبان برنامه نویسی کهربا</title>
       
     
     
@@ -79,11 +79,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#_1" class="md-skip">
-          پرش به محتویات
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -116,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              نصب و استفاده
+              مپ‌ | Map
             
           </span>
         </div>
@@ -260,14 +255,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -288,21 +281,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../construction/install/" class="md-nav__link">
         نصب و استفاده
       </a>
-      
     </li>
   
 
@@ -334,12 +317,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -362,7 +347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/comment/" class="md-nav__link">
+      <a href="../comment/" class="md-nav__link">
         کامنت‌ها
       </a>
     </li>
@@ -376,7 +361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/define/" class="md-nav__link">
+      <a href="../define/" class="md-nav__link">
         متغیرها |‌ Variables
       </a>
     </li>
@@ -390,7 +375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/arrays/" class="md-nav__link">
+      <a href="../arrays/" class="md-nav__link">
         آرایه‌ها | Arrays
       </a>
     </li>
@@ -402,11 +387,19 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../concepts/map/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         مپ‌ | Map
       </a>
+      
     </li>
   
 
@@ -418,7 +411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/boolean/" class="md-nav__link">
+      <a href="../boolean/" class="md-nav__link">
         عبارت‌های منطقی | boolean
       </a>
     </li>
@@ -449,8 +442,6 @@
   
   
   
-    
-  
   
 </nav>
                   </div>
@@ -464,27 +455,22 @@
                 
                   
 
-  <a href="https://github.com/kahroba-lang/docs/edit/master/docs/construction/install.md" title="این صفحه را ویرایش کنید" class="md-content__button md-icon">
+  <a href="https://github.com/kahroba-lang/docs/edit/master/docs/concepts/map.md" title="این صفحه را ویرایش کنید" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="_1">نحوه استفاده از زبان کهربا</h1>
-<p>برای اجرای برنامه های به زبان کهربا لازم است برنامه خود را در فایلی با پسوند .krb یا .kahroba بسازید (مانند main.krb) و از خط فرمان برنامه را اجرا کنید:<br />
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>./kahroba main.krb    // linux
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>kahroba.exe main.krb   // windows
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>kahroba_mac main.krb   // mac
+  <h1>مپ‌ | Map</h1>
+
+<p>مثل آرایه ، مپ هم در زبان کهربا از انعطاف بالایی برخوردار است و میتوانید هر نوع داده ای را درون مپ قرار دهید.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s">&quot;name&quot;</span>:<span class="s">&quot;Kahroba&quot;</span><span class="p">,</span><span class="s">&quot;version&quot;</span>:<span class="mf">0.1</span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">println</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s">&quot;name&quot;</span><span class="p">])</span><span class="w"></span>
 </code></pre></div>
-میتوانید از لینک های زیر فایل های اجرایی مربوط به سیستم عامل خود را دانلود کنید :</p>
-<p><a href="https://github.com/kahroba-lang/kahroba/releases/download/0.1/kahroba">لینوکس</a> \
-<a href="https://github.com/kahroba-lang/kahroba/releases/download/0.1/kahroba.exe">ویندوز</a> \
-<a href="https://github.com/kahroba-lang/kahroba/releases/download/0.1/kahroba_mac">مک</a></p>
-<p>همچنین میتوانید کهربا را از سورس کد بیلد بگیرید(به گیت و نسخه 1.19 گولنگ نیاز خواهید داشت) :
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>$ git clone https://github.com/kahroba-lang/kahroba.git
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>$ cd kahroba
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>$ go build
-</code></pre></div></p>
+خروجی:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Kahroba
+</code></pre></div>
+<strong>نکته:</strong> میتوانید از فانکشن len برای محاسبه طول مپ استفاده کنید</p>
 
 
   
@@ -507,7 +493,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../../about/" class="md-footer__link md-footer__link--prev" aria-label="قبلی: پیشگفتار" rel="prev">
+        <a href="../arrays/" class="md-footer__link md-footer__link--prev" aria-label="قبلی: آرایه‌ها | Arrays" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -516,20 +502,20 @@
               <span class="md-footer__direction">
                 قبلی
               </span>
-              پیشگفتار
+              آرایه‌ها | Arrays
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../sample/hello-world/" class="md-footer__link md-footer__link--next" aria-label="بعدی: سلام دنیا" rel="next">
+        <a href="../boolean/" class="md-footer__link md-footer__link--next" aria-label="بعدی: عبارت‌های منطقی | boolean" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 بعدی
               </span>
-              سلام دنیا
+              عبارت‌های منطقی | boolean
             </div>
           </div>
           <div class="md-footer__button md-icon">
