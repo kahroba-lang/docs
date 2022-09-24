@@ -1,17 +1,18 @@
 site_name: زبان برنامه نویسی کهربا
 nav:
-  - درباره کهربا: about.md
-  - شروع کنید:
+  - پیشگفتار: about.md
+  - شروع:
       - نصب و استفاده: construction/install.md
-  - ویژگی‌های زبان:
-      - تعریف متغیرها: features/define.md
-      - آرایه‌ها | Arrays: features/arrays.md
-      - مپ‌ | Map: features/map.md
-      - عبارت‌های منطقی | boolean: features/boolean.md
+      - سلام دنیا: sample/hello-world.md
 
+  - مفاهیم زبان کهربا:
+      - کامنت‌ها: concepts/comment.md
+      - متغیرها |‌ Variables: concepts/define.md
+      - آرایه‌ها | Arrays: concepts/arrays.md
+      - مپ‌ | Map: concepts/map.md
+      - عبارت‌های منطقی | boolean: concepts/boolean.md
 plugins:
-  - search:
-      lang: "fa"
+  - search
 theme:
   name: material
   direction: rtl
@@ -52,7 +53,7 @@ extra:
   version:
     provider: mike
 
-repo_url: https://github.com/kahroba-lang/kahroba
+repo_url: https://github.com/kahroba-lang/docs
 repo_name: ریپوزیتوری گیت‌هاب
 markdown_extensions:
   - pymdownx.highlight:
