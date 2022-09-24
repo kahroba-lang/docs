@@ -1,4 +1,143 @@
+## معرفی زبان کهربا
+زبان **کهربا** یک پروژه آموزشی جهت نمایش نحوه کار یک زبان برنامه نویسی است
+هدف این زبان سادگی و انعطاف پذیری و راحتی استفاده است
 
+[![Documents](https://badgen.net/badge/Documents/passing/blue?icon=wiki)](https://kahroba-lang.github.io/docs/latest)
+[![Version](https://badgen.net/badge/Ver/0.1/orange?icon=github)](https://kahroba-lang.github.io/docs/0.1)
+[![status](https://badgen.net/badge/Status/Released/green?icon=now)](https://kahroba-lang.github.io/docs/0.1)
+
+
+## نحوه استفاده از زبان کهربا 
+برای اجرای برنامه های به زبان کهربا لازم است برنامه خود را در فایلی با پسوند .krb یا .kahroba بسازید (مانند main.krb) و از خط فرمان برنامه را اجرا کنید:  
+```bash
+./kahroba main.krb    // linux
+kahroba.exe main.krb   // windows
+kahroba_mac main.krb   // mac
+```
+میتوانید از لینک های زیر فایل های اجرایی مربوط به سیستم عامل خود را دانلود کنید :
+
+[لینوکس](https://github.com/kahroba-lang/kahroba/releases/download/0.1/kahroba) \
+[ویندوز](https://github.com/kahroba-lang/kahroba/releases/download/0.1/kahroba.exe) \
+[مک](https://github.com/kahroba-lang/kahroba/releases/download/0.1/kahroba_mac)
+
+همچنین میتوانید کهربا را از سورس کد بیلد بگیرید(به گیت و نسخه 1.19 گولنگ نیاز خواهید داشت) :
+```
+$ git clone https://github.com/kahroba-lang/kahroba.git
+$ cd kahroba
+$ go build
+```
+
+## کامنت
+
+کامنت ها در زبان کهربا با دو اسلش پشت هم شروع میشوند و خطی که کامنت در نظر گرفته شود پردازش نمی شود
+
+    // This is my first program in Kahroba programming language, Let's Rock!
+
+## تعریف رشته ها
+رشته ها در زبان کهربا بین دو کوتیشن قرار میگیرند
+```rust
+"Hello World!"
+```
+دو رشته را توسط عملگر جمع میتوانید به هم متصل کنید
+```rust
+"Hello " + "World!" // Hello World
+```
+در زبان کهربا میتوانید رشته ها را با اعداد جمع کنید  
+اگر عملوند سمت چپ رشته باشد نتیجه رشته خواهد شد  
+اگر عملوند سمت چپ عدد باشد نتیجه عدد خواهد شد  
+مثال:
+```rust
+1 + "1" // 2
+"1" + 1 // 11
+```
+
+می‌توان از کاراکترهای کنترلی درون رشته ها استفاده کرد  
+مثال:  
+
+```rust
+str = "Hello\nWorld"
+str2 = "Hello\tWorld"
+println(str)
+println(str2)
+```
+
+خروجی:   
+```
+Hello
+World
+Hello	World
+```
+
+
+## تعریف متغیر
+متغیرها در زبان کهربا تایپ ندارند و نحوه تعریف کردن اونها به شکل زیر است
+```rust
+name = "Kahroba"
+version = 0.1
+a = 1 + 2
+a = "text"
+```
+## آرایه
+آرایه ها در زبان کهربا بسیار انعطاف پذیرند و میتوانید در آرایه دیتا تایپ های مختلفی را ذخیره کنید.
+```rust
+nums = [1,2,3,4]
+everything = [1,"kahroba",0.1]
+```
+برای دسترسی به یک عنصر از آرایه به شکل زیر عمل میکنیم:
+```rust
+nums[0] // 1
+everything[1] // "kahroba"
+```
+## مپ
+مثل آرایه ، مپ هم در زبان کهربا از انعطاف بالایی برخوردار است و میتوانید هر نوع داده ای را درون مپ قرار دهید.
+```rust
+data = {"name":"Kahroba","version":0.1}
+println(data["name"])
+```
+خروجی:
+```
+Kahroba
+```
+## len
+
+به وسیله فانکشن len می‌توانیم طول رشته، آرایه و مپ را بدست بیاوریم.
+
+```rust
+a = [1,2,3,4,5]
+b = {"name":"kahroba"}
+c = "Hello World"
+
+println(len(a)) // 5
+println(len(b)) // 1
+println(len(c)) // 11
+```
+
+## boolean
+زبان کهربا از نوع boolean پشتیبانی میکند
+```rust
+a = true
+b = false
+!a // false
+!b // true
+a == b // false
+a != b // true
+true or false // true
+true and false // false
+```
+## چاپ در خروجی
+به وسیله دستور print یا println میتوان عملیات چاپ در خروجی را انجام داد
+دستورات چاپ میتوانند چندین ورودی داشته باشند:
+```rust
+println("سلام دنیا!")
+print("زبان ")
+print("کهربا ")
+println("version:",0.1)
+```
+خروجی:
+```
+سلام دنیا!
+زبان کهربا version 0.1
+```
 ## گرفتن ورودی
 به وسیله دستور input میتوان یک رشته را از کاربر به عنوان ورودی دریافت کرد:
 ```rust
@@ -9,7 +148,6 @@ print("Hello, ",name)
 فانکشن ها در زبان کهربا به وسیله کلمه کلیدی fn تعریف میشوند.
 فانکشن های میتوانند مقداری باز گردانند یا باز نگردانند.
 بصورت پیش فرض آخرین دستور یک فانکشن برگردانده میشود و استفاده از کلمه return اختیاری است
-
 ```rust
 fn sum(a,b) {
     a+b
@@ -60,7 +198,6 @@ if a + b > c {
     print("OK")
 }
 ```
-
 همچین میتوان از دستور else برای زمان عدم صحت شرط استفاده کرد
 ```rust
 if a + b > c {
@@ -69,7 +206,6 @@ if a + b > c {
     print("Not OK")
 }
 ```
-
 ## حلقه تکرار
 برای استفاده از حلقه در زبان کهربا از دستور for به شکل زیر استفاده میشود
 ```rust
