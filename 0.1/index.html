@@ -540,17 +540,16 @@
     کنترل جریان برنامه
   </a>
   
-    <nav class="md-nav" aria-label="کنترل جریان برنامه">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
     دستورات شرطی
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_13" class="md-nav__link">
     حلقه تکرار
   </a>
@@ -590,16 +589,11 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#quicksort" class="md-nav__link">
     پیاده سازی الگوریتم quicksort توسط کهربا
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -623,6 +617,8 @@
   </a>
 
 
+  <h1>Home</h1>
+
 <h2 id="_1">معرفی زبان کهربا</h2>
 <p>زبان <strong>کهربا</strong> یک پروژه آموزشی جهت نمایش نحوه کار یک زبان برنامه نویسی است
 هدف این زبان سادگی و انعطاف پذیری و راحتی استفاده است</p>
@@ -631,9 +627,9 @@
 <a href="https://kahroba-lang.github.io/docs/0.1"><img alt="status" src="https://badgen.net/badge/Status/Released/green?icon=now" /></a></p>
 <h2 id="_2">نحوه استفاده از زبان کهربا</h2>
 <p>برای اجرای برنامه های به زبان کهربا لازم است برنامه خود را در فایلی با پسوند .krb یا .kahroba بسازید (مانند main.krb) و از خط فرمان برنامه را اجرا کنید:<br />
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>./kahroba main.krb    // linux
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>kahroba.exe main.krb   // windows
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>kahroba_mac main.krb   // mac
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="go">./kahroba main.krb    // linux</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="go">kahroba.exe main.krb   // windows</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="go">kahroba_mac main.krb   // mac</span>
 </code></pre></div>
 میتوانید از لینک های زیر فایل های اجرایی مربوط به سیستم عامل خود را دانلود کنید :</p>
 <p><a href="https://github.com/kahroba-lang/kahroba/releases/download/0.1/kahroba">لینوکس</a> \
@@ -641,7 +637,7 @@
 <a href="https://github.com/kahroba-lang/kahroba/releases/download/0.1/kahroba_mac">مک</a></p>
 <p>همچنین میتوانید کهربا را از سورس کد بیلد بگیرید(به گیت و نسخه 1.19 گولنگ نیاز خواهید داشت) :
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>$ git clone https://github.com/kahroba-lang/kahroba.git
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>$ cd kahroba
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>$ <span class="nb">cd</span> kahroba
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>$ go build
 </code></pre></div></p>
 <h2 id="_3">کامنت</h2>
@@ -776,7 +772,7 @@ hello(getName())
 <div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="m">5</span> <span class="m">10</span>
 <a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="m">10</span> <span class="m">5</span>
 </code></pre></div></p>
-<h1 id="_11">کنترل جریان برنامه</h1>
+<h2 id="_11">کنترل جریان برنامه</h2>
 <h2 id="_12">دستورات شرطی</h2>
 <p>به وسیله دستور if میتوان از دستورات شرطی استفاده کرد
 <div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="k">if</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="p">{</span><span class="w"></span>

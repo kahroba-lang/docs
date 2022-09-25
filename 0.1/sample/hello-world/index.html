@@ -366,6 +366,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    خروجی مد نظر
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -545,6 +552,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    خروجی مد نظر
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -576,20 +590,37 @@
 <p>قبل از هر چیز، شما نیاز دارید فایل اجرایی برنامه به نصبت سیستم عامل خود را نصب کنید. برای دیدن راهنمایی نصب به صفحه <a href="../../construction/install/">آموزش نصب و اجرای کهربا</a> بروید.</p>
 <h2 id="_3">ساخت دایرکتوری پروژه</h2>
 <p>مهم نسیت فایل‌های شما در کدام مسیر و یا با چه اسمی ذخیره میشوند. اما برای تمرین بهتر است تمامی مراحل را به صورتی که باید طی کنیم.</p>
-<p><div class="highlight"><span class="filename">ساخت دایرکتوری | linux</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">$ </span>mkdir hello_world
+<p><div class="highlight"><span class="filename">ساخت دایرکتوری و فایل | bash terminal</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">$ </span>mkdir hello_world
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">$ </span><span class="nb">cd</span> hello_world
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">$ </span>touch 
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">$ </span>touch hello.krb
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="go">or $ touch hello.kahroba</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">در ویندوز</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>&gt; mkdir hello_world
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>&gt; cd hello_world
+<div class="highlight"><span class="filename">Windows | Powershell</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&gt;</span> <span class="nb">New-Item</span> <span class="s2">&quot;C:\kahroba&quot;</span> <span class="n">-itemType</span> <span class="n">Directory</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">&gt;</span> <span class="nb">New-Item</span> <span class="s2">&quot;C:\kahroba\hello.krb&quot;</span>
 </code></pre></div></p>
+<div class="highlight"><span class="filename">Windows | CMD</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&gt;</span> <span class="n">mkdir</span> <span class="n">kahroba</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">&gt;</span> <span class="nb">cd </span><span class="n">kahroba</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">&gt;</span> <span class="nb">type </span><span class="n">nul</span> <span class="p">&gt;</span> <span class="n">kahroba</span><span class="p">/</span><span class="n">hello</span><span class="p">.</span><span class="n">krb</span> 
+</code></pre></div>
 <h2 id="_4">نوشتن و اجرا کردن برنامه</h2>
-<p>بدون در نظر گرفتن سیستم عامل شما، این  کد میتواند رشته <code>Hello World!</code> را برای شما در ترمینال یا CMD چاپ کند.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">print</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span><span class="w"></span>
+<p>بدون در نظر گرفتن سیستم عامل شما، این  کد میتواند رشته <code>Hello World!</code> را برای شما در کنسول چاپ کند. فایل <code>hello.krb</code> را با ویرایشگر خود ویرایش کنید و کد زیر را در آن بنویسید.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">print</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
+فایل را به راحتی ذخیره کنید.</p>
 <h3 id="_5">اجرای کد</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>
+<p>برای اجرای کد نوشته شده در فایل شما نیاز دارید تا از فایل کهربا استفاده کنید.
+به طور مثال: </p>
+<p><div class="highlight"><span class="filename">اجرای کد نوشته شده | Linux terminal</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="gp">$ </span>./kahroba main.krb
 </code></pre></div>
+<div class="highlight"><span class="filename">اجرای کد | Windows CMD or Powershell</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="go">&gt; kahroba.exe main.krb</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">اجرای کد نوشته شده | Macintosh (Mac)</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="go">kahroba_mac main.krb</span>
+</code></pre></div></p>
+<h3 id="_6">خروجی مد نظر</h3>
+<p>اگر همه مراحل را درست انجام داده باشید باید خروجی زیر را در کنسول خود مشاهده کنید:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Hello World!
+</code></pre></div>
+تبریک میگوییم، شما اولین کد کهربای خود را به راحتی نوشته و اجرا کردید. در ادامه مسیر همراه ما باشید تا با ویژگی‌های این زبان آشنا شوید.</p>
 
 
   
